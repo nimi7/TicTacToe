@@ -1,0 +1,10 @@
+
+
+<button [disabled]="winner"  nbButton *ngIf="!value">{{ value }} </button>
+
+
+
+
+<button  [ngStyle]="{'background-color': (boardsStrike.includes(index)) ? 'green' : null}"  nbButton hero status="success" *ngIf="value == 'X'">{{ value }}</button>
+<button  [ngStyle]="{'background-color': (boardsStrike.includes(index)) ? 'green' : null}" nbButton hero status="info" *ngIf="value == 'O'">{{ value }}</button>
+

@@ -1,0 +1,21 @@
+
+<div class="boardgame">
+
+
+    <!-- <div *ngFor="let strike of boardsStrike">
+        {{strike}}
+    </div> -->
+    <h2> Current Player {{player}}  </h2>
+
+    <button class="RestartGame" (click)="newGame()"> Start New Game</button>
+
+    <h5 *ngIf="winner">
+        Player {{winner}} won the Game!
+    </h5>
+
+    <main>
+        <app-square  *ngFor="let val of squares ; let i = index" [index]="i" [boardsStrike]="boardsStrike" [winner]="winner" [value]="val" (click)="makeMove(i)">
+
+        </app-square>
+    </main>
+</div>

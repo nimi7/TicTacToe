@@ -1,0 +1,20 @@
+button {
+ 
+  width: 100%;
+  height: 100%;
+  font-size: 5em !important;
+  border: solid 2px rgb(150, 106, 150);
+  border-radius: 10px;
+}
+.BorderWinner{
+    background-color: rgb(1, 2, 4);
+}
+
+
+.bordWin{
+    background-color: green;
+}
+
+.bordLose{
+    background-color: blue;
+}
